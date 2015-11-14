@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D332A2501BF7D7F800DF99DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332A24F1BF7D7F800DF99DB /* AppDelegate.swift */; };
+		D332A2521BF7D7F800DF99DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332A2511BF7D7F800DF99DB /* ViewController.swift */; };
+		D332A2551BF7D7F900DF99DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D332A2531BF7D7F800DF99DB /* Main.storyboard */; };
+		D332A2581BF7D7F900DF99DB /* threedegrees.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D332A2561BF7D7F900DF99DB /* threedegrees.xcdatamodeld */; };
+		D332A25A1BF7D7F900DF99DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D332A2591BF7D7F900DF99DB /* Assets.xcassets */; };
+		D332A25D1BF7D7F900DF99DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D332A25B1BF7D7F900DF99DB /* LaunchScreen.storyboard */; };
+		D332A2681BF7D7F900DF99DB /* threedegreesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332A2671BF7D7F900DF99DB /* threedegreesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D332A2641BF7D7F900DF99DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D332A2441BF7D7F800DF99DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D332A24B1BF7D7F800DF99DB;
+			remoteInfo = threedegrees;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D332A24C1BF7D7F800DF99DB /* threedegrees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threedegrees.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D332A24F1BF7D7F800DF99DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D332A2511BF7D7F800DF99DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D332A2541BF7D7F800DF99DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D332A2571BF7D7F900DF99DB /* threedegrees.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = threedegrees.xcdatamodel; sourceTree = "<group>"; };
+		D332A2591BF7D7F900DF99DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D332A25C1BF7D7F900DF99DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D332A25E1BF7D7F900DF99DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D332A2631BF7D7F900DF99DB /* threedegreesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threedegreesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D332A2671BF7D7F900DF99DB /* threedegreesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threedegreesTests.swift; sourceTree = "<group>"; };
+		D332A2691BF7D7F900DF99DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D332A2491BF7D7F800DF99DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332A2601BF7D7F900DF99DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D332A2431BF7D7F800DF99DB = {
+			isa = PBXGroup;
+			children = (
+				D332A24E1BF7D7F800DF99DB /* threedegrees */,
+				D332A2661BF7D7F900DF99DB /* threedegreesTests */,
+				D332A24D1BF7D7F800DF99DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D332A24D1BF7D7F800DF99DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D332A24C1BF7D7F800DF99DB /* threedegrees.app */,
+				D332A2631BF7D7F900DF99DB /* threedegreesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D332A24E1BF7D7F800DF99DB /* threedegrees */ = {
+			isa = PBXGroup;
+			children = (
+				D332A24F1BF7D7F800DF99DB /* AppDelegate.swift */,
+				D332A2511BF7D7F800DF99DB /* ViewController.swift */,
+				D332A2531BF7D7F800DF99DB /* Main.storyboard */,
+				D332A2591BF7D7F900DF99DB /* Assets.xcassets */,
+				D332A25B1BF7D7F900DF99DB /* LaunchScreen.storyboard */,
+				D332A25E1BF7D7F900DF99DB /* Info.plist */,
+				D332A2561BF7D7F900DF99DB /* threedegrees.xcdatamodeld */,
+			);
+			path = threedegrees;
+			sourceTree = "<group>";
+		};
+		D332A2661BF7D7F900DF99DB /* threedegreesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D332A2671BF7D7F900DF99DB /* threedegreesTests.swift */,
+				D332A2691BF7D7F900DF99DB /* Info.plist */,
+			);
+			path = threedegreesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D332A24B1BF7D7F800DF99DB /* threedegrees */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D332A26C1BF7D7F900DF99DB /* Build configuration list for PBXNativeTarget "threedegrees" */;
+			buildPhases = (
+				D332A2481BF7D7F800DF99DB /* Sources */,
+				D332A2491BF7D7F800DF99DB /* Frameworks */,
+				D332A24A1BF7D7F800DF99DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = threedegrees;
+			productName = threedegrees;
+			productReference = D332A24C1BF7D7F800DF99DB /* threedegrees.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D332A2621BF7D7F900DF99DB /* threedegreesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D332A26F1BF7D7F900DF99DB /* Build configuration list for PBXNativeTarget "threedegreesTests" */;
+			buildPhases = (
+				D332A25F1BF7D7F900DF99DB /* Sources */,
+				D332A2601BF7D7F900DF99DB /* Frameworks */,
+				D332A2611BF7D7F900DF99DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D332A2651BF7D7F900DF99DB /* PBXTargetDependency */,
+			);
+			name = threedegreesTests;
+			productName = threedegreesTests;
+			productReference = D332A2631BF7D7F900DF99DB /* threedegreesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D332A2441BF7D7F800DF99DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "NickBrian^2";
+				TargetAttributes = {
+					D332A24B1BF7D7F800DF99DB = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					D332A2621BF7D7F900DF99DB = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = D332A24B1BF7D7F800DF99DB;
+					};
+				};
+			};
+			buildConfigurationList = D332A2471BF7D7F800DF99DB /* Build configuration list for PBXProject "threedegrees" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D332A2431BF7D7F800DF99DB;
+			productRefGroup = D332A24D1BF7D7F800DF99DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D332A24B1BF7D7F800DF99DB /* threedegrees */,
+				D332A2621BF7D7F900DF99DB /* threedegreesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D332A24A1BF7D7F800DF99DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D332A25D1BF7D7F900DF99DB /* LaunchScreen.storyboard in Resources */,
+				D332A25A1BF7D7F900DF99DB /* Assets.xcassets in Resources */,
+				D332A2551BF7D7F900DF99DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332A2611BF7D7F900DF99DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D332A2481BF7D7F800DF99DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D332A2581BF7D7F900DF99DB /* threedegrees.xcdatamodeld in Sources */,
+				D332A2521BF7D7F800DF99DB /* ViewController.swift in Sources */,
+				D332A2501BF7D7F800DF99DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332A25F1BF7D7F900DF99DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D332A2681BF7D7F900DF99DB /* threedegreesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D332A2651BF7D7F900DF99DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D332A24B1BF7D7F800DF99DB /* threedegrees */;
+			targetProxy = D332A2641BF7D7F900DF99DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D332A2531BF7D7F800DF99DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D332A2541BF7D7F800DF99DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D332A25B1BF7D7F900DF99DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D332A25C1BF7D7F900DF99DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D332A26A1BF7D7F900DF99DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D332A26B1BF7D7F900DF99DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D332A26D1BF7D7F900DF99DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = threedegrees/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hackharvard.threedegrees;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D332A26E1BF7D7F900DF99DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = threedegrees/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hackharvard.threedegrees;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D332A2701BF7D7F900DF99DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = threedegreesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hackharvard.threedegreesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/threedegrees.app/threedegrees";
+			};
+			name = Debug;
+		};
+		D332A2711BF7D7F900DF99DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = threedegreesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.hackharvard.threedegreesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/threedegrees.app/threedegrees";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D332A2471BF7D7F800DF99DB /* Build configuration list for PBXProject "threedegrees" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D332A26A1BF7D7F900DF99DB /* Debug */,
+				D332A26B1BF7D7F900DF99DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D332A26C1BF7D7F900DF99DB /* Build configuration list for PBXNativeTarget "threedegrees" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D332A26D1BF7D7F900DF99DB /* Debug */,
+				D332A26E1BF7D7F900DF99DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D332A26F1BF7D7F900DF99DB /* Build configuration list for PBXNativeTarget "threedegreesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D332A2701BF7D7F900DF99DB /* Debug */,
+				D332A2711BF7D7F900DF99DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D332A2561BF7D7F900DF99DB /* threedegrees.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D332A2571BF7D7F900DF99DB /* threedegrees.xcdatamodel */,
+			);
+			currentVersion = D332A2571BF7D7F900DF99DB /* threedegrees.xcdatamodel */;
+			path = threedegrees.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D332A2441BF7D7F800DF99DB /* Project object */;
+}
