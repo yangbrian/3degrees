@@ -17,12 +17,42 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var navigation: UINavigationItem!
     
+    var image: UIImage!
+    
     // MARK: Actions
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         navigation.title = "3Degrees"
+    }
+    @IBAction func submit(sender: UIButton) {
+        
+        // make a post request to server
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://3degrees.byang.io/image")!)
+        request.HTTPMethod = "POST"
+        request.timeoutInterval = 14
+        
+        let base64String = UIImagePNGRepresentation(self.image)!.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+        
+        let postString = "image=\(base64String)&percent=\(estimatedPercentage.text!)"
+        
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        
+        let requestTask = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {
+            data, response, error in
+            
+            if error != nil {
+                print("error=\(error)")
+                return
+            }
+            
+            print("response=\(response!)")
+            
+            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+            print("responseString=\(responseString)")
+        })
+        requestTask.resume()
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,6 +92,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         // Set photoImageView to display the selected image.
         selectedImage.image = selectedImageGallery
         
+        self.image = selectedImageGallery
+        
         // change select image button to say select another
         selectButton.setTitle("Select another image", forState: .Normal)
         
@@ -72,6 +104,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         dismissViewControllerAnimated(true, completion: nil)
         
     }
+    
+    // MARK: UITextFieldDelegate
+    
 
 }
 
