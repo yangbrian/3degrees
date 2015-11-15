@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">3Degrees</string>
+    <string name="splash">ARE YOU READY TO HAVE YOUR MIND BLOWN?</string>
+    <string name="pickImage">Pick a thermal image from gallery:</string>
+    <string name="wotm8">MY BRAIN HURTS</string>
+    <string name="images">Images</string>
+    <string name="heatmapDescription">heatmap image</string>
+    <string name="percentSign">%</string>
+    <string name="estimateBurn">Estimate total percentage of burned skin:</string>
+    <string name="analyze">Analyze</string>
+</resources>
