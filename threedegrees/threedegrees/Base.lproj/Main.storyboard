@@ -150,7 +150,7 @@
         <!--3Degrees - Data-->
         <scene sceneID="Owg-Xu-HwS">
             <objects>
-                <viewController title="3Degrees - Data" id="olc-DT-swB" sceneMemberID="viewController">
+                <viewController title="3Degrees - Data" id="olc-DT-swB" customClass="TableViewController" customModule="threedegrees" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M7Y-ER-fz8"/>
                         <viewControllerLayoutGuide type="bottom" id="EFY-y8-K5o"/>
@@ -159,45 +159,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wbt-Q2-sPE">
-                                <rect key="frame" x="174" y="256" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chart" translatesAutoresizingMaskIntoConstraints="NO" id="44S-Kh-p3t">
+                                <rect key="frame" x="104" y="212" width="240" height="128"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yQj-DE-RAg">
-                                        <rect key="frame" x="0.0" y="92" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yQj-DE-RAg" id="yWr-PL-dQa">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Wbt-Q2-sPE" secondAttribute="trailing" id="52n-NV-2Jm"/>
-                            <constraint firstItem="Wbt-Q2-sPE" firstAttribute="leading" secondItem="73p-9N-uaO" secondAttribute="leadingMargin" constant="-16" id="6Sy-BB-nNE"/>
-                            <constraint firstItem="Wbt-Q2-sPE" firstAttribute="top" secondItem="M7Y-ER-fz8" secondAttribute="bottom" id="ADY-j5-7Ls"/>
-                            <constraint firstItem="EFY-y8-K5o" firstAttribute="top" secondItem="Wbt-Q2-sPE" secondAttribute="bottom" id="UX4-I1-xlh"/>
-                            <constraint firstItem="Wbt-Q2-sPE" firstAttribute="top" secondItem="M7Y-ER-fz8" secondAttribute="bottom" id="VN7-2V-cUb"/>
-                            <constraint firstItem="Wbt-Q2-sPE" firstAttribute="leading" secondItem="73p-9N-uaO" secondAttribute="leadingMargin" id="b51-ja-UGF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Wbt-Q2-sPE" secondAttribute="trailing" constant="16" id="tF0-99-OQr"/>
-                            <constraint firstItem="EFY-y8-K5o" firstAttribute="top" secondItem="Wbt-Q2-sPE" secondAttribute="bottom" id="up0-eL-9GA"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="6Sy-BB-nNE"/>
-                                <exclude reference="ADY-j5-7Ls"/>
-                                <exclude reference="tF0-99-OQr"/>
-                                <exclude reference="UX4-I1-xlh"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="chart" destination="44S-Kh-p3t" id="Azl-Ec-yFx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4P-vt-BAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,4 +195,7 @@
             <point key="canvasLocation" x="1257" y="474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Chart" width="423" height="210"/>
+    </resources>
 </document>

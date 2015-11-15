@@ -14,6 +14,7 @@
 		D332A25A1BF7D7F900DF99DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D332A2591BF7D7F900DF99DB /* Assets.xcassets */; };
 		D332A25D1BF7D7F900DF99DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D332A25B1BF7D7F900DF99DB /* LaunchScreen.storyboard */; };
 		D332A2681BF7D7F900DF99DB /* threedegreesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332A2671BF7D7F900DF99DB /* threedegreesTests.swift */; };
+		D332A2731BF8CCED00DF99DB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332A2721BF8CCED00DF99DB /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D332A2631BF7D7F900DF99DB /* threedegreesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = threedegreesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D332A2671BF7D7F900DF99DB /* threedegreesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = threedegreesTests.swift; sourceTree = "<group>"; };
 		D332A2691BF7D7F900DF99DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D332A2721BF8CCED00DF99DB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				D332A25B1BF7D7F900DF99DB /* LaunchScreen.storyboard */,
 				D332A25E1BF7D7F900DF99DB /* Info.plist */,
 				D332A2561BF7D7F900DF99DB /* threedegrees.xcdatamodeld */,
+				D332A2721BF8CCED00DF99DB /* TableViewController.swift */,
 			);
 			path = threedegrees;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				D332A2581BF7D7F900DF99DB /* threedegrees.xcdatamodeld in Sources */,
 				D332A2521BF7D7F800DF99DB /* ViewController.swift in Sources */,
 				D332A2501BF7D7F800DF99DB /* AppDelegate.swift in Sources */,
+				D332A2731BF8CCED00DF99DB /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
