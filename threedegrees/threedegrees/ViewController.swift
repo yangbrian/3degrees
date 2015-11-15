@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // MARK: Properties
     @IBOutlet weak var selectButton: UIButton!
     @IBOutlet weak var selectedImage: UIImageView!
-    @IBOutlet weak var estimatedPercentage: UITextField!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var navigation: UINavigationItem!
+    @IBOutlet weak var currentPercent: UILabel!
     
     var image: UIImage!
     
@@ -24,18 +24,47 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        navigation.title = "3Degrees"
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
+    
+    // hide the keyboard
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    @IBAction func sliderChange(sender: UISlider) {
+        currentPercent.text = "\(Int(sender.value))"
+    }
+    
     @IBAction func submit(sender: UIButton) {
         
+        print(Int(currentPercent.text!))
+        
+        if (Int(currentPercent.text!) > 95){
+            let alert = UIAlertController(title: "Error", message: "Burn percentage can't be greater than 95%.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            return
+        }
+        
+        if (Int(currentPercent.text!) < 0) {
+            let alert = UIAlertController(title: "Error", message: "Lol what's negative burn anyway?", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+            return
+        }
+        
         // make a post request to server
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://3degrees.byang.io/image")!)
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:5555/image")!)
         request.HTTPMethod = "POST"
         request.timeoutInterval = 14
         
         let base64String = UIImagePNGRepresentation(self.image)!.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
         
-        let postString = "image=\(base64String)&percent=\(estimatedPercentage.text!)"
+        let postString = "image=\(base64String)&percent=\(currentPercent.text!)"
         
         request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         
@@ -49,8 +78,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
             
             print("response=\(response!)")
             
-            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-            print("responseString=\(responseString)")
+//            let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+//            print("responseString=\(responseString)")
+            
         })
         requestTask.resume()
     }
@@ -62,7 +92,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
 
     // allow user to find an image on their device
     @IBAction func selectImageAction(sender: UIButton) {
-        estimatedPercentage.resignFirstResponder()
         
         // UIImagePickerController is a view controller that lets a user pick media from their photo library.
         let imagePickerController = UIImagePickerController()
@@ -104,8 +133,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         dismissViewControllerAnimated(true, completion: nil)
         
     }
-    
-    // MARK: UITextFieldDelegate
     
 
 }

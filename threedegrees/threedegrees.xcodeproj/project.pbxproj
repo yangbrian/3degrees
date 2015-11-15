@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D332A2501BF7D7F800DF99DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332A24F1BF7D7F800DF99DB /* AppDelegate.swift */; };
 		D332A2521BF7D7F800DF99DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332A2511BF7D7F800DF99DB /* ViewController.swift */; };
-		D332A2551BF7D7F900DF99DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D332A2531BF7D7F800DF99DB /* Main.storyboard */; };
+		D332A2551BF7D7F900DF99DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D332A2531BF7D7F800DF99DB /* Main.storyboard */; settings = {ASSET_TAGS = (test, ); }; };
 		D332A2581BF7D7F900DF99DB /* threedegrees.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D332A2561BF7D7F900DF99DB /* threedegrees.xcdatamodeld */; };
 		D332A25A1BF7D7F900DF99DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D332A2591BF7D7F900DF99DB /* Assets.xcassets */; };
 		D332A25D1BF7D7F900DF99DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D332A25B1BF7D7F900DF99DB /* LaunchScreen.storyboard */; };
@@ -143,6 +143,9 @@
 		D332A2441BF7D7F800DF99DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					test,
+				);
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "NickBrian^2";
