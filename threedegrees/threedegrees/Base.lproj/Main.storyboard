@@ -50,7 +50,7 @@
                                 <rect key="frame" x="20" y="433" width="168" height="20.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="95" translatesAutoresizingMaskIntoConstraints="NO" id="EHH-yx-b52">
@@ -76,14 +76,14 @@
                                 <rect key="frame" x="310" y="433" width="42" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJv-VH-TfS">
                                 <rect key="frame" x="282" y="433" width="25" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -159,13 +159,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chart" translatesAutoresizingMaskIntoConstraints="NO" id="44S-Kh-p3t">
-                                <rect key="frame" x="104" y="212" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Chart" translatesAutoresizingMaskIntoConstraints="NO" id="44S-Kh-p3t">
+                                <rect key="frame" x="20" y="72" width="560" height="376"/>
                                 <animations/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="44S-Kh-p3t" firstAttribute="leading" secondItem="73p-9N-uaO" secondAttribute="leadingMargin" constant="8" id="gMg-SW-aDj"/>
+                            <constraint firstItem="44S-Kh-p3t" firstAttribute="top" secondItem="M7Y-ER-fz8" secondAttribute="bottom" constant="8" id="ij8-AT-nx7"/>
+                            <constraint firstItem="44S-Kh-p3t" firstAttribute="trailing" secondItem="73p-9N-uaO" secondAttribute="trailingMargin" constant="8" id="n0A-z9-sKJ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="chart" destination="44S-Kh-p3t" id="Azl-Ec-yFx"/>
@@ -196,6 +201,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Chart" width="423" height="210"/>
+        <image name="Chart" width="457" height="363"/>
     </resources>
 </document>
